@@ -1,0 +1,28 @@
+%cell-ctyle {
+  border: $day-border solid $day-border-color;
+  width: $day-size;
+  height: $day-size;
+  box-sizing: border-box;
+
+}
+
+%value-style {
+  @extend %d-fl-center;
+
+  font-family: $day-font;
+  font-size: $day-font-size;
+}
+
+%calender-wrap {
+  box-sizing: border-box;
+  display: flex;
+  gap: $day-gap;
+  flex-wrap: wrap;
+  width: calc(7 * $day-size + 6 * $day-gap + 2 * $padd);
+}
+
+%d-fl-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

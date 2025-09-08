@@ -1,0 +1,11 @@
+@each  $name, $day in $week {
+  .calender--#{$name}:first-child {
+    margin-left: ($day-size + $day-gap) * $day;
+  }
+};
+
+@for $i from 1 through 31 {
+  .calender__day:nth-child(#{$i})::before {
+    content: "#{$i}";
+  }
+};

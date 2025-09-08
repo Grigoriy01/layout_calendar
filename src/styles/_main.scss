@@ -1,0 +1,17 @@
+.page {
+  margin: 0;
+  height: 100vh;
+
+  @extend %d-fl-center;
+}
+
+.calender {
+  @extend %calender-wrap;
+
+  padding: $padd;
+
+  &__day {
+    @extend %cell-ctyle;
+    @extend %value-style;
+  }
+}
