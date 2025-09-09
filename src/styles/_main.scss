@@ -11,7 +11,10 @@
   padding: $padd;
 
   &__day {
-    @extend %cell-ctyle;
+    @extend %cell-style;
     @extend %value-style;
+
+    flex: 0 0 $day-size;
+    height: $day-size;
   }
 }

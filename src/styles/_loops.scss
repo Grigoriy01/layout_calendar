@@ -1,6 +1,8 @@
 @each  $name, $day in $week {
-  .calender--#{$name}:first-child {
-    margin-left: ($day-size + $day-gap) * $day;
+  .calender--#{$name} {
+    .calender__day:first-child {
+      margin-left: ($day-size + $day-gap) * $day;
+    }
   }
 };
 
