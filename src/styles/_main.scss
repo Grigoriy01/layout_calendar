@@ -2,19 +2,25 @@
   margin: 0;
   height: 100vh;
 
-  @extend %d-fl-center;
+  @extend %df-center;
 }
 
-.calender {
-  @extend %calender-wrap;
+.calendar {
+  @extend %calendar-grid;
 
-  padding: $padd;
+  padding: $padd-10;
 
   &__day {
-    @extend %cell-style;
-    @extend %value-style;
+    @extend %cell-grid;
+    @extend %cell-content-style;
+    @extend %df-center;
 
-    flex: 0 0 $day-size;
-    height: $day-size;
+    transition-duration: 0.5s;
+
+    &:hover {
+      cursor: pointer;
+      background: $cell-bg-hover;
+      transform: translateY($tr-duretion);
+    }
   }
 }
