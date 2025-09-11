@@ -8,19 +8,20 @@
 .calendar {
   @extend %calendar-grid;
 
-  padding: $padd-10;
+  padding: $padd-side-5;
 
   &__day {
     @extend %cell-grid;
     @extend %cell-content-style;
     @extend %df-center;
 
-    transition-duration: 0.5s;
+    transition: transform 0.5s,
+      background-color 0.5s;
 
     &:hover {
       cursor: pointer;
       background: $cell-bg-hover;
-      transform: translateY($tr-duretion);
+      transform: translateY($hover-ofset);
     }
   }
 }
